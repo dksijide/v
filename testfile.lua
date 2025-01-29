@@ -1,2 +1,1 @@
-print(hi)
-print(dude)
+print(hi.Name)
