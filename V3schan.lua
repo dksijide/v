@@ -1,3 +1,5 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
 local v = {"V3schan", "Woodtoolsc"}
 local v2 = false
 
@@ -15,6 +17,10 @@ if v2 then
         Duration = 5 
     })
 
+	local Tabs = {
+				Personal = Window:AddTab({ Title = "Personal", Icon = "archive" }),
+			}
+	
 		Tabs.Personal:AddButton({
         Title = "0 WinsStreak",
         Description = "Making an all coins account 0 Wins",
