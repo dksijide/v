@@ -1,9 +1,21 @@
-if game.Players.LocalPlayer.Name == "V3schan" then
-Tabs.Main:AddButton({
-        Title = "Personal(Dev Only)",
-        Description = "Hello this is only for the developer",
-        Callback = function()
-			local Tabs = {
+local v = {"V3schan", "Woodtoolsc"}
+local v2 = false
+
+for _, username in pairs(v) do
+    if game.Players.LocalPlayer.Name == username then
+        v2 = true
+        break
+    end
+end
+
+if v2 then
+	Fluent:Notify({
+        Title = "Welcome me",
+        Content = "Welcome " .. game.Players.LocalPlayer.DisplayName .. "totally not the owner",
+        Duration = 5 
+    })
+	
+local Tabs = {
 				Personal = Window:AddTab({ Title = "Personal", Icon = "archive" }),
 			}
 
@@ -41,6 +53,10 @@ Tabs.Main:AddButton({
 					end
 				end
 			})
-        end
+else
+    Fluent:Notify({
+        Title = "Can't be open",
+        Content = "Sorry only the owner can open this...",
+        Duration = 5 
     })
 end
