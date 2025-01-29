@@ -1,35 +1,4 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
-local Window = Fluent:CreateWindow({
-    Title = "Trash(ごみ) " .. "0.0.2",
-    SubTitle = "- puuror",
-    TabWidth = 80,
-    Size = UDim2.fromOffset(450, 350),
-    Acrylic = false,
-    Theme = "Rose",
-    MinimizeKey = Enum.KeyCode.LeftControl
-})
-
-local v = {"V3schan", "Woodtoolsc"}
-local v2 = false
-
-for _, username in pairs(v) do
-    if game.Players.LocalPlayer.Name == username then
-        v2 = true
-        break
-    end
-end
-
-if v2 then
-	Fluent:Notify({
-        Title = "Welcome me",
-        Content = "Welcome " .. game.Players.LocalPlayer.DisplayName .. "totally not the owner",
-        Duration = 5 
-    })
-
-	local Tabs = {
-				Personal = Window:AddTab({ Title = "Personal", Icon = "archive" }),
-			}
 	
 		Tabs.Personal:AddButton({
         Title = "0 WinsStreak",
@@ -65,10 +34,3 @@ if v2 then
 					end
 				end
 			})
-else
-    Fluent:Notify({
-        Title = "Can't be open",
-        Content = "Sorry only the owner can open this...",
-        Duration = 5 
-    })
-end
