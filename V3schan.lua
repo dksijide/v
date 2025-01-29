@@ -11,7 +11,7 @@ end
 if v2 then
 	Fluent:Notify({
         Title = "Welcome me",
-        Content = "Welcome " .. game.Players.LocalPlayer.DisplayName .. "totally not the owner",
+        Content = "Welcome " .. game.Players.LocalPlayer.DisplayName",
         Duration = 5 
     })
 		local Tabs = {
