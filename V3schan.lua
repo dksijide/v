@@ -14,10 +14,6 @@ if v2 then
         Content = "Welcome " .. game.Players.LocalPlayer.DisplayName .. "totally not the owner",
         Duration = 5 
     })
-	
-local Tabs = {
-				Personal = Window:AddTab({ Title = "Personal", Icon = "archive" }),
-			}
 
 		Tabs.Personal:AddButton({
         Title = "0 WinsStreak",
