@@ -1,3 +1,4 @@
+if game.Players.LocalPlayer.Name == "V3schan" then
 Tabs.Main:AddButton({
         Title = "Personal(Dev Only)",
         Description = "Hello this is only for the developer",
@@ -42,3 +43,4 @@ Tabs.Main:AddButton({
 			})
         end
     })
+end
