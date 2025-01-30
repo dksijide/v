@@ -1,14 +1,4 @@
-local v = "V3schan"
-local v2 = false
 
-for _, username in pairs(v) do
-    if game.Players.LocalPlayer.Name == username then
-        v2 = true
-        break
-    end
-end
-
-if v2 then
 		local Tabs = {
 				Personal = Window:AddTab({ Title = "Personal", Icon = "archive" }),
 			}
@@ -47,4 +37,4 @@ if v2 then
 					end
 				end
 			})
-end
+
