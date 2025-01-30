@@ -8,12 +8,6 @@
         Description = "Making an all coins account 0 Wins",
         Callback = function()
 
-			Fluent:Notify({
-					Title = "Hello",
-					Content = "Please wait for 2 players left until u die",
-					Duration = 5 
-				})
-
 					local hi = game.Workspace.plrsLeft
 					local player = game.Players.LocalPlayer
 
