@@ -1,4 +1,4 @@
-local v = {"V3schan", "Woodtoolsc"}
+local v = "V3schan"
 local v2 = false
 
 for _, username in pairs(v) do
