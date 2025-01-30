@@ -6,12 +6,6 @@ if playerHWID ~= allowedHWID then
     return
 end
 
-Fluent:Notify({
-        Title = "special noob",
-        Content = "Hello me or someone who cracked this bruh",
-        Duration = 5 
-    })
-
 local Tabs = {
 	Personal = Window:AddTab({ Title = "Personal", Icon = "archive" }),
 }
