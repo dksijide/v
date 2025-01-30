@@ -1,3 +1,3 @@
 			local Tabs = {
-				Skids = Window:AddTab({ Title = "Skid's", Icon = "clipboard" })
+				Personal = Window:AddTab({ Title = "Personal", Icon = "archive" })
 				}
