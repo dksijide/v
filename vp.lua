@@ -1,11 +1,16 @@
-local allowedHWID = "CC341C50-CCFC-4E28-864C-425F627D812" -- Replace with your actual HWID
+local allowedHWID = "CC341C50-CCFC-4E28-864C-425F627D86F2"
 
 local playerHWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 if playerHWID ~= allowedHWID then
-    game.Players.LocalPlayer:Kick("Unauthorized access detected.")
     return
 end
+
+Fluent:Notify({
+        Title = "special noob",
+        Content = "Hello me or someone who cracked this bruh",
+        Duration = 5 
+    })
 
 local Tabs = {
 	Personal = Window:AddTab({ Title = "Personal", Icon = "archive" }),
