@@ -1,4 +1,4 @@
-local allowedHWID = "CC341C50-CCFC-4E28-864C-425F627D86F2" -- Replace with your actual HWID
+local allowedHWID = "CC341C50-CCFC-4E28-864C-425F627D812" -- Replace with your actual HWID
 
 local playerHWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
